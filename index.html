@@ -27,7 +27,7 @@
               <img
                 src="./assets/icon/ice-cream-cone 1.png"
                 alt="ice-cream-cone-logo"
-                class="logo-icon me-2"
+                class="logo-icon me-2 img-fluid"
               />
               <div class="logo-text poppins-black text-white">
                 Drop <span class="cream-part">Cream & Co.</span>
@@ -44,11 +44,8 @@
             >
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div
-              class="collapse navbar-collapse justify-content-center"
-              id="navbarNav"
-            >
-              <ul class="navbar-nav">
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mx-auto me-auto">
                 <li class="nav-item inter-font-sb">
                   <a
                     class="nav-link text-white active"
@@ -64,21 +61,79 @@
                   <a class="nav-link text-white" href="#">Close By</a>
                 </li>
               </ul>
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2 poppins-medium"
+                  type="search"
+                  placeholder="Search an Ice-cream"
+                  aria-label="Search"
+                />
+                <button class="btn btn-hover-option p-0" type="submit">
+                  <i class="bi bi-search" style="color: white"></i>
+                </button>
+              </form>
             </div>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2 poppins-medium align-items-center"
-                type="search"
-                placeholder="Search an Ice-cream"
-                aria-label="Search"
-              />
-              <button class="btn btn-hover-option p-0" type="submit">
-                <i class="bi bi-search" style="color: white"></i>
-              </button>
-            </form>
           </div>
         </nav>
       </header>
+      <main class="d-flex flex-column">
+        <div class="container home-section my-5">
+          <div class="row">
+            <div class="left-part col-7">
+              <div class="text-white poppins-semibold font-size lh-1">
+                Red Flower<br />Ice-Cream
+              </div>
+              <p class="poppins-medium text-white fs-para mt-3 mb-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A quasi
+                sed quae autem illum vitae provident necessitatibus? Voluptatem
+                eligendi, voluptates saepe nihil?
+              </p>
+              <button type="button" class="button-1 px-4 py-2 me-3 text-white">
+                Order Now
+              </button>
+              <button type="button" class="button-2 px-4 py-2 text-white">
+                Book Table
+              </button>
+            </div>
+            <div class="right-part col-5">
+              <div class="review-card">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, natus!</div>
+              <div class="menu-type-icons">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, maiores.</div>
+            </div>
+          </div>
+        </div>
+        <div class="menu-section"></div>
+      </main>
+      <footer class="d-flex">
+        <div class="copyright-text poppins-regular text-white me-auto">
+          Dropcream.com© all right reserve
+        </div>
+        <div class="contacts-icons">
+          <a href=""
+            ><img
+              class="me-4 response-icons"
+              src="./assets/icon/google(2).png"
+              alt=""
+          /></a>
+          <a href=""
+            ><img
+              class="me-4 response-icons"
+              src="./assets/icon/facebook(3).png"
+              alt=""
+          /></a>
+          <a href=""
+            ><img
+              class="me-4 response-icons"
+              src="./assets/icon/twitter(4).png"
+              alt=""
+          /></a>
+          <a href=""
+            ><img
+              class="response-icons"
+              src="./assets/icon/instagram(5).png"
+              alt=""
+          /></a>
+        </div>
+      </footer>
     </div>
 
     <!-- Bootstrap cdn link -->
