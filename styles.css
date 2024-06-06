@@ -61,7 +61,7 @@ body {
 :root{
   --color-01: #fff;
   --color-02: #000;
-  --color-03: #ffffff48;
+  --color-03: #ffffff38;
 }
 /* logo icon & text css */
 .logo-icon{
@@ -109,17 +109,112 @@ body {
   border-color: var(--color-01);
   border-radius: 10px;
   font-size: 1.2em;
-  background-color: var(--color-03) !important;  /* Semi-transparent white background */
+  background-color: transparent !important;  /* Semi-transparent white background */
+  transition-duration: 0.4s;
 }
 .button-2{
-  background-color: var(--color-03) !important;  /* Semi-transparent white background */
+  background-color: transparent !important;  /* Semi-transparent white background */
+  transition-duration: 0.4s;
   border-color: var(--color-01);
   border-radius: 10px;
   font-size: 1.2em;
   color: var(--color-02);
 }
+.button-1:hover {
+  background-color: var(--color-03) !important;
+  color: white;
+}
+.button-2:hover {
+  background-color: var(--color-03) !important; 
+  color: white;
+}
+
+/* right part css */
+.review-card{
+  display: flex;
+  align-items: center;
+}
+.card-box{
+  background-color: var(--color-01);
+  padding: 10px 15px;
+  border-radius: 15px;
+  width: 20vw;
+}
+.profile{
+  display: flex;
+  align-items: center;
+}
+.scroll-bars{
+  margin-left: 6px;
+  width: 23px;
+  height: 50px;
+  background-color: var(--color-01);
+  border-radius: 5px;
+}
+.type-btn{
+  background-color: transparent !important;  /* Semi-transparent white background */
+  transition-duration: 0.4s;
+  border-color: var(--color-01);
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 30px !important;
+  color: var(--color-01);
+}
+.type-btn:hover{
+  background-color: var(--color-03) !important; /* Green */
+  color: white;
+}
+.chose-btn{
+  display: flex;
+  justify-content: space-between;
+}
+
 
 /* footer */
 .response-icons{
   width: 13% ;
+}
+
+
+/* responsive css */
+@media (width<550px) {
+  .fs-para{
+    font-size: 10px;
+    letter-spacing: 1.5px;
+  }
+  .button-1{
+    /* background-color: transparent; */
+    border-color: var(--color-01);
+    border-radius: 10px;
+    font-size: 1em;
+    background-color: transparent !important;  /* Semi-transparent white background */
+    transition-duration: 0.4s;
+  }
+  .button-2{
+    background-color: transparent !important;  /* Semi-transparent white background */
+    transition-duration: 0.4s;
+    border-color: var(--color-01);
+    border-radius: 10px;
+    font-size: 1em;
+    color: var(--color-02);
+    margin-top: 5px;
+  }
+  .fs-footers{
+    font-size: 12px !important;
+  }
+  .response-icons{
+    width: 10% ;
+  }
+}
+
+@media (width<740px) {
+  .profile{
+    flex-direction: column;
+  }
+  .fs-review{
+    font-size: 10px;
+    display: none;
+  }
+  
 }
