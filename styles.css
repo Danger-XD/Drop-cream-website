@@ -15,7 +15,7 @@ body {
   background-image: url("./assets/images/background.jpg");
   background-size: cover;
   background-attachment:fixed;
-  background-position: top;
+  background-position: top center;
   background-repeat: no-repeat;
 }
 
@@ -145,7 +145,7 @@ body {
   align-items: center;
 }
 .scroll-bars{
-  margin-left: 6px;
+  margin-left: 5px;
   width: 23px;
   height: 50px;
   background-color: var(--color-01);
@@ -160,6 +160,7 @@ body {
   height: 50px;
   font-size: 30px !important;
   color: var(--color-01);
+  margin-bottom: 10px;
 }
 .type-btn:hover{
   background-color: var(--color-03) !important; /* Green */
@@ -207,7 +208,18 @@ body {
     width: 10% ;
   }
 }
-
+@media (width<768px) {
+  .type-btn{
+    font-size: 20px !important;
+    width: 40px;
+    height: 40px;
+  }
+  .profile{
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
 @media (width<740px) {
   .profile{
     flex-direction: column;
