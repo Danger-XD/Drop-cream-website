@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-html{
+html {
   height: 100%;
   width: 100%;
 }
@@ -14,15 +14,15 @@ body {
   width: 100vw;
   background-image: url("./assets/images/background.jpg");
   background-size: cover;
-  background-attachment:fixed;
-  background-position: top center;
+  background-attachment: fixed;
+  background-position: 50% 20%; /* x and y position*/
   background-repeat: no-repeat;
 }
 
 /* font import links */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;800&display=swap");
 
 /* font css classes */
 .poppins-regular {
@@ -48,27 +48,27 @@ body {
   font-weight: 800;
   font-style: normal;
 }
-.inter-font-sb{
+.inter-font-sb {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  font-variation-settings:"slnt" 0;
+  font-variation-settings: "slnt" 0;
   font-size: 1em;
 }
 
 /* root colors */
-:root{
+:root {
   --color-01: #fff;
   --color-02: #000;
   --color-03: #ffffff38;
 }
 /* logo icon & text css */
-.logo-icon{
+.logo-icon {
   height: 25% !important;
   width: 25% !important;
 }
-.logo-text{
+.logo-text {
   display: flex;
   flex-direction: column;
   font-size: 0.9em !important;
@@ -76,15 +76,17 @@ body {
 }
 
 /* Navbar css */
-.form-control{
+.form-control {
   height: 30px;
   width: 180% !important;
   border-radius: 20px !important;
   border: 1px solid var(--color-02) !important;
-  background-color: var(--color-03) !important;  /* Semi-transparent white background */
+  background-color: var(
+    --color-03
+  ) !important; /* Semi-transparent white background */
   color: var(--color-01) !important;
 }
-.form-control::placeholder{
+.form-control::placeholder {
   color: var(--color-01) !important;
 }
 
@@ -97,23 +99,23 @@ body {
 }
 
 /* home sections css */
-.font-size{
+.font-size {
   font-size: 8vw;
 }
-.fs-para{
+.fs-para {
   font-size: 15px;
   letter-spacing: 1.5px;
 }
-.button-1{
+.button-1 {
   /* background-color: transparent; */
   border-color: var(--color-01);
   border-radius: 10px;
   font-size: 1.2em;
-  background-color: transparent !important;  /* Semi-transparent white background */
+  background-color: transparent !important; /* Semi-transparent white background */
   transition-duration: 0.4s;
 }
-.button-2{
-  background-color: transparent !important;  /* Semi-transparent white background */
+.button-2 {
+  background-color: transparent !important; /* Semi-transparent white background */
   transition-duration: 0.4s;
   border-color: var(--color-01);
   border-radius: 10px;
@@ -125,34 +127,34 @@ body {
   color: white;
 }
 .button-2:hover {
-  background-color: var(--color-03) !important; 
+  background-color: var(--color-03) !important;
   color: white;
 }
 
 /* right part css */
-.review-card{
+.review-card {
   display: flex;
   align-items: center;
 }
-.card-box{
+.card-box {
   background-color: var(--color-01);
   padding: 10px 15px;
   border-radius: 15px;
   width: 20vw;
 }
-.profile{
+.profile {
   display: flex;
   align-items: center;
 }
-.scroll-bars{
+.scroll-bars {
   margin-left: 5px;
   width: 23px;
   height: 50px;
   background-color: var(--color-01);
   border-radius: 5px;
 }
-.type-btn{
-  background-color: transparent !important;  /* Semi-transparent white background */
+.type-btn {
+  background-color: transparent !important; /* Semi-transparent white background */
   transition-duration: 0.4s;
   border-color: var(--color-01);
   border-radius: 10px;
@@ -162,38 +164,80 @@ body {
   color: var(--color-01);
   margin-bottom: 10px;
 }
-.type-btn:hover{
+.type-btn:hover {
   background-color: var(--color-03) !important; /* Green */
   color: white;
 }
-.chose-btn{
+.chose-btn {
   display: flex;
   justify-content: space-between;
 }
 
-
 /* footer */
-.response-icons{
-  width: 13% ;
+.response-icons {
+  width: 13%;
 }
 
-
 /* responsive css */
+@media (width>768px) {
+  .hover-line {
+    position: relative;
+    padding: 0 8px !important;
+    letter-spacing: 0.7px;
+  }
+  .hover-line::after {
+    content: " ";
+    position: absolute;
+    background-color: var(--color-01);
+    height: 3px;
+    width: 0;
+    left: 5px;
+    bottom: -5px;
+    transition: 0.3s;
+    border-radius: 10px;
+  }
+  .hover-line:hover::after {
+    width: 80%;
+  }
+  /* .hover-line.active::after {
+    width: 90%;
+  } */
+}
+@media (width<768px) {
+  .type-btn {
+    font-size: 20px !important;
+    width: 40px;
+    height: 40px;
+  }
+  .profile {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (width<740px) {
+  .profile {
+    flex-direction: column;
+  }
+  .fs-review {
+    font-size: 10px;
+    display: none;
+  }
+}
 @media (width<550px) {
-  .fs-para{
+  .fs-para {
     font-size: 10px;
     letter-spacing: 1.5px;
   }
-  .button-1{
+  .button-1 {
     /* background-color: transparent; */
     border-color: var(--color-01);
     border-radius: 10px;
     font-size: 1em;
-    background-color: transparent !important;  /* Semi-transparent white background */
+    background-color: transparent !important; /* Semi-transparent white background */
     transition-duration: 0.4s;
   }
-  .button-2{
-    background-color: transparent !important;  /* Semi-transparent white background */
+  .button-2 {
+    background-color: transparent !important; /* Semi-transparent white background */
     transition-duration: 0.4s;
     border-color: var(--color-01);
     border-radius: 10px;
@@ -201,32 +245,10 @@ body {
     color: var(--color-02);
     margin-top: 5px;
   }
-  .fs-footers{
+  .fs-footers {
     font-size: 12px !important;
   }
-  .response-icons{
-    width: 10% ;
+  .response-icons {
+    width: 10%;
   }
-}
-@media (width<768px) {
-  .type-btn{
-    font-size: 20px !important;
-    width: 40px;
-    height: 40px;
-  }
-  .profile{
-    display: flex;
-    flex-direction: column;
-  }
-  
-}
-@media (width<740px) {
-  .profile{
-    flex-direction: column;
-  }
-  .fs-review{
-    font-size: 10px;
-    display: none;
-  }
-  
 }
