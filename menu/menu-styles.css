@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-html{
+html {
   height: 100%;
   width: 100%;
 }
@@ -13,15 +13,15 @@ body {
   height: 100vh;
   background-image: url("../assets/images/background.jpg");
   background-size: cover;
-  background-attachment:scroll;
-  background-position: 50% 20%;  /* x and y position*/
+  background-attachment: scroll;
+  background-position: 50% 20%; /* x and y position*/
   background-repeat: no-repeat;
 }
 
 /* font import links */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;800&display=swap");
 
 /* font css classes */
 .poppins-regular {
@@ -44,27 +44,27 @@ body {
   font-weight: 800;
   font-style: normal;
 }
-.inter-font-sb{
+.inter-font-sb {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  font-variation-settings:"slnt" 0;
+  font-variation-settings: "slnt" 0;
   font-size: 1em;
 }
 
 /* root colors */
-:root{
+:root {
   --color-01: #fff;
   --color-02: #000;
   --color-03: #ffffff38;
 }
 /* logo icon & text css */
-.logo-icon{
+.logo-icon {
   height: 25% !important;
   width: 25% !important;
 }
-.logo-text{
+.logo-text {
   display: flex;
   flex-direction: column;
   font-size: 0.9em !important;
@@ -72,15 +72,17 @@ body {
 }
 
 /* Navbar css */
-.form-control{
+.form-control {
   height: 30px;
   width: 180% !important;
   border-radius: 20px !important;
   border: 1px solid var(--color-02) !important;
-  background-color: var(--color-03) !important;  /* Semi-transparent white background */
+  background-color: var(
+    --color-03
+  ) !important; /* Semi-transparent white background */
   color: var(--color-01) !important;
 }
-.form-control::placeholder{
+.form-control::placeholder {
   color: var(--color-01) !important;
 }
 
@@ -91,46 +93,53 @@ body {
   /* Target the icon within the button */
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='0' y1='0' x2='30' y2='0' stroke='white' stroke-width='4' stroke-linecap='round'/%3E%3Cline x1='0' y1='15' x2='30' y2='15' stroke='white' stroke-width='4' stroke-linecap='round'/%3E%3Cline x1='0' y1='30' x2='30' y2='30' stroke='white' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E"); /* Replace with your desired icon (optional) */
 }
-
+/* add-to-cart css */
+.cart-btn {
+  border: 2px solid var(--color-01);
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+.cart-btn:hover {
+  cursor: default;
+}
 /* cards css */
-.card{
+.card {
   flex-direction: row !important;
   background-color: transparent !important;
   height: 200px !important;
-  /* width: 500px; */
   border-radius: 20px !important;
   border: 2px solid var(--color-01) !important;
 }
-.card img{
+.card img {
   margin: auto auto;
   width: 35%;
   background-color: transparent;
 }
-.card-title{
+.card-title {
   font-size: 20px;
 }
-.select-btn{
+.select-btn {
   border-radius: 15px;
   padding: 5px 25px;
   font-size: 15px;
   background-color: transparent;
   color: var(--color-01) !important;
 }
-.select-btn:hover{
+.select-btn:hover {
   background-color: var(--color-03);
 }
 
 /* footer */
-footer{
+footer {
   height: 80px;
 }
-.response-icons{
-  width: 13% ;
+.response-icons {
+  width: 13%;
 }
 
 /* responsive css */
 @media (width<992px) {
-  .select-btn{
+  .select-btn {
     padding: 5px;
   }
 }
@@ -159,20 +168,69 @@ footer{
   } */
 }
 @media (width<1150px) {
-  body{
+  body {
     background-attachment: fixed;
   }
 }
-@media (width<430px) {  
-  .select-btn{
+@media (width<430px) {
+  .select-btn {
     padding: 5px;
   }
 }
 @media (width<550px) {
-  .fs-footers{
+  .fs-footers {
     font-size: 12px !important;
   }
-  .response-icons{
-    width: 10% ;
+  .response-icons {
+    width: 10%;
+  }
+}
+
+/* From w3school */
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
   }
 }
