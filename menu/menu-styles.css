@@ -128,7 +128,6 @@ footer{
   width: 13% ;
 }
 
-
 /* responsive css */
 @media (width<992px) {
   .select-btn{
