@@ -6,8 +6,16 @@
     <title>Drop Cream & Co.</title>
     <!-- css and bootstrap cdn links -->
     <link rel="stylesheet" href="./closeby-styles.css" />
-    <link rel="shortcut icon" href="../assets/favicon/apple-touch-icon.png" type="image/x-icon">
-    <link rel="shortcut icon" href="../assets/favicon/favicon-16x16.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="../assets/favicon/apple-touch-icon.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="shortcut icon"
+      href="../assets/favicon/favicon-16x16.png"
+      type="image/x-icon"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -28,104 +36,151 @@
   </head>
   <body>
     <!-- Project link: https://www.figma.com/design/CkrRYKf4Kyggk1ePH7J0Bv/Ice-Cream-Landing-Page-Website-UI-Design%3A-Beginner's-Web-Design-Tutorial-(Community)?node-id=16-2&t=PsRr6q69fTDY88wf-0 -->
-    <div class="container">
-      <header>
-        <nav class="navbar navbar-expand-md bg-transparent pt-4">
-          <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="#">
-              <img
-                src="../assets/icon/ice-cream-cone 1.png"
-                alt="ice-cream-cone-logo"
-                class="logo-icon me-2 img-fluid"
-              />
-              <div class="logo-text poppins-black text-white">
-                Drop <span class="cream-part">Cream & Co.</span>
-              </div>
-            </a>
-            <button
-              class="navbar-toggler border-0 text-white"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav mx-auto me-auto">
-                <li class="nav-item inter-font-sb">
-                  <a
-                    class="nav-link text-white hover-line"
-                    aria-current="page"
-                    href="../index.html"
-                    >Home</a
-                  >
-                </li>
-                <li class="nav-item inter-font-sb">
-                  <a class="nav-link text-white hover-line" href="../menu/menu.html">Menu</a>
-                </li>
-                <li class="nav-item inter-font-sb">
-                  <a class="nav-link text-white hover-line" href="../knowUs/knowus.html">Know Us</a>
-                </li>
-                <li class="nav-item inter-font-sb">
-                  <a class="nav-link text-white hover-line active" href="#">Close By</a>
-                </li>
-              </ul>
-              <form class="d-flex" role="search">
-                <input
-                  class="form-control me-2 poppins-medium"
-                  type="search"
-                  placeholder="Search an Ice-cream"
-                  aria-label="Search"
+    <div class="wrapper">
+      <div class="container">
+        <header>
+          <nav class="navbar navbar-expand-md bg-transparent pt-4">
+            <div class="container">
+              <a class="navbar-brand d-flex align-items-center" href="#">
+                <img
+                  src="../assets/icon/ice-cream-cone 1.png"
+                  alt="ice-cream-cone-logo"
+                  class="logo-icon me-2 img-fluid"
                 />
-                <button class="btn btn-hover-option p-0" type="submit">
-                  <i class="bi bi-search" style="color: white"></i>
-                </button>
-              </form>
+                <div class="logo-text poppins-black text-white">
+                  Drop <span class="cream-part">Cream & Co.</span>
+                </div>
+              </a>
+              <button
+                class="navbar-toggler border-0 text-white"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto me-auto">
+                  <li class="nav-item inter-font-sb">
+                    <a
+                      class="nav-link text-white hover-line"
+                      aria-current="page"
+                      href="../index.html"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item inter-font-sb">
+                    <a
+                      class="nav-link text-white hover-line"
+                      href="../menu/menu.html"
+                      >Menu</a
+                    >
+                  </li>
+                  <li class="nav-item inter-font-sb">
+                    <a
+                      class="nav-link text-white hover-line"
+                      href="../knowUs/knowus.html"
+                      >Know Us</a
+                    >
+                  </li>
+                  <li class="nav-item inter-font-sb">
+                    <a class="nav-link text-white hover-line active" href="#"
+                      >Close By</a
+                    >
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input
+                    class="form-control me-2 poppins-medium"
+                    type="search"
+                    placeholder="Search an Ice-cream"
+                    aria-label="Search"
+                  />
+                  <button class="btn btn-hover-option p-0" type="submit">
+                    <i class="bi bi-search" style="color: white"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        </header>
+
+        <main class="mt-3">
+          <div class="d-flex justify-content-between flex-wrap">
+            <div class="address text-white">
+              <h5>
+                Drop Cream & Co. - Ice Cream Paradise in Dhaka, Bangladesh
+              </h5>
+              <h6>Location: Gulshan Avenue, Gulshan-2, Dhaka, Bangladesh</h6>
+              <p>
+                Welcome to Drop Cream & Co., your ultimate destination for a
+                delightful ice cream experience in the heart of Dhaka. Located
+                in the bustling area of Gulshan-2, our ice cream shop is set in
+                a spacious and inviting environment designed to provide a
+                refreshing retreat for ice cream lovers of all ages.
+              </p>
+              <h6>Contact Information:</h6>
+              <p><ul>
+                <li>Address: Drop Cream & Co., House #12, Road #35, Gulshan Avenue, Gulshan-2, Dhaka, Bangladesh</li>
+                <li>Phone: +880-123-456-7890</li>
+                <li>Email: info@dropcreamco.com</li>
+                <li>Website: www.dropcreamco.com</li>
+              </ul></p>
+            </div>
+            <div class="googleMaps">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29518.262725844474!2d91.78600761083987!3d22.361827100000017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acd88f83bb36ef%3A0x5e3edd0b65657de5!2sSub-Zero!5e0!3m2!1sen!2sbd!4v1718522981760!5m2!1sen!2sbd"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
-        </nav>
-      </header>
-      <main class="d-flex flex-column">
-        <div class="location-section">this is map page</div>
-      </main>
-      <footer class="d-flex">
-        <div
-          class="copyright-text fs-footers poppins-regular text-white me-auto"
-        >
-          Dropcream.com© all right reserve
-        </div>
-        <div class="contacts-icons">
-          <a href=""
-            ><img
-              class="me-4 response-icons"
-              src="../assets/icon/google(2).png"
-              alt=""
-          /></a>
-          <a href=""
-            ><img
-              class="me-4 response-icons"
-              src="../assets/icon/facebook(3).png"
-              alt=""
-          /></a>
-          <a href=""
-            ><img
-              class="me-4 response-icons"
-              src="../assets/icon/twitter(4).png"
-              alt=""
-          /></a>
-          <a href=""
-            ><img
-              class="response-icons"
-              src="../assets/icon/instagram(5).png"
-              alt=""
-          /></a>
-        </div>
-      </footer>
+        </main>
+      </div>
+      
+      <div class="container">
+        <footer class="d-flex align-items-center">
+          <div
+            class="copyright-text fs-footers poppins-regular text-white me-auto"
+          >
+            Dropcream.com© all right reserve
+          </div>
+          <div class="contacts-icons">
+            <a href=""
+              ><img
+                class="me-4 response-icons"
+                src="../assets/icon/google(2).png"
+                alt=""
+            /></a>
+            <a href=""
+              ><img
+                class="me-4 response-icons"
+                src="../assets/icon/facebook(3).png"
+                alt=""
+            /></a>
+            <a href=""
+              ><img
+                class="me-4 response-icons"
+                src="../assets/icon/twitter(4).png"
+                alt=""
+            /></a>
+            <a href=""
+              ><img
+                class="response-icons"
+                src="../assets/icon/instagram(5).png"
+                alt=""
+            /></a>
+          </div>
+        </footer>
+      </div>
     </div>
-
     <!-- Bootstrap cdn link -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

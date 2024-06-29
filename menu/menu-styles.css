@@ -11,10 +11,9 @@ html{
 }
 body {
   height: 100vh;
-  width: 100vw;
   background-image: url("../assets/images/background.jpg");
   background-size: cover;
-  background-attachment:fixed;
+  background-attachment:scroll;
   background-position: 50% 20%;  /* x and y position*/
   background-repeat: no-repeat;
 }
@@ -30,19 +29,16 @@ body {
   font-weight: 400;
   font-style: normal;
 }
-
 .poppins-medium {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
 }
-
 .poppins-semibold {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;
 }
-
 .poppins-black {
   font-family: "Poppins", sans-serif;
   font-weight: 800;
@@ -96,14 +92,49 @@ body {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='0' y1='0' x2='30' y2='0' stroke='white' stroke-width='4' stroke-linecap='round'/%3E%3Cline x1='0' y1='15' x2='30' y2='15' stroke='white' stroke-width='4' stroke-linecap='round'/%3E%3Cline x1='0' y1='30' x2='30' y2='30' stroke='white' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E"); /* Replace with your desired icon (optional) */
 }
 
+/* cards css */
+.card{
+  flex-direction: row !important;
+  background-color: transparent !important;
+  height: 200px !important;
+  /* width: 500px; */
+  border-radius: 20px !important;
+  border: 2px solid var(--color-01) !important;
+}
+.card img{
+  margin: auto auto;
+  width: 35%;
+  background-color: transparent;
+}
+.card-title{
+  font-size: 20px;
+}
+.select-btn{
+  border-radius: 15px;
+  padding: 5px 25px;
+  font-size: 15px;
+  background-color: transparent;
+  color: var(--color-01) !important;
+}
+.select-btn:hover{
+  background-color: var(--color-03);
+}
 
 /* footer */
+footer{
+  height: 80px;
+}
 .response-icons{
   width: 13% ;
 }
 
 
 /* responsive css */
+@media (width<992px) {
+  .select-btn{
+    padding: 5px;
+  }
+}
 @media (width>768px) {
   .hover-line {
     position: relative;
@@ -116,23 +147,27 @@ body {
     background-color: var(--color-01);
     height: 3px;
     width: 0;
-    left: 5px;
+    left: 9px;
     bottom: -5px;
     transition: 0.3s;
     border-radius: 10px;
   }
   .hover-line:hover::after {
-    width: 80%;
+    width: 70%;
   }
   /* .hover-line.active::after {
     width: 90%;
   } */
 }
-@media (width<768px) {
-  
+@media (width<1150px) {
+  body{
+    background-attachment: fixed;
+  }
 }
-@media (width<740px) {
-  
+@media (width<430px) {  
+  .select-btn{
+    padding: 5px;
+  }
 }
 @media (width<550px) {
   .fs-footers{
