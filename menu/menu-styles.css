@@ -100,7 +100,7 @@ body {
   border-radius: 15px;
 }
 .cart-btn:hover {
-  cursor: default;
+  cursor: pointer;
 }
 /* cards css */
 .card {
